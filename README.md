@@ -25,6 +25,12 @@ brew tap Snappers-tv/homebrew-ffmpeg
 brew install Snappers-tv/homebrew-ffmpeg/ffmpeg --with-fdk-aac --with-openssl@1.1 --with-openssl --with-libssh
 ```
 
+FFmpeg should be installed to :
+/home/ubuntu/.linuxbrew/Cellar/ffmpeg/4.3.2-with-options.reinstall/bin/ffmpeg
+or
+/home/ubuntu/.linuxbrew/Cellar/ffmpeg/4.3.2-with-options/bin/ffmpeg
+** Add it to your path ore copy it to the a path dir **
+
 **Note:** If you already have `ffmpeg` installed from Homebrew core, you will receive an error. You need to first run `brew uninstall ffmpeg` before you can use this tap.
 
 ### Installing with options
