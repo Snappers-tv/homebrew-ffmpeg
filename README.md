@@ -20,8 +20,8 @@ In order to use this tap, you need to install Homebrew.
 Then, to run a default installation, run:
 
 ```
-brew tap homebrew-ffmpeg/ffmpeg
-brew install homebrew-ffmpeg/ffmpeg/ffmpeg
+brew tap Snappers-tv/homebrew-ffmpeg
+brew install Snappers-tv/homebrew-ffmpeg/ffmpeg --with-fdk-aac --with-openssl@1.1 --with-openssl --with-libssh
 ```
 
 **Note:** If you already have `ffmpeg` installed from Homebrew core, you will receive an error. You need to first run `brew uninstall ffmpeg` before you can use this tap.
