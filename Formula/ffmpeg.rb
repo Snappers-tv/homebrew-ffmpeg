@@ -29,6 +29,7 @@ class Ffmpeg < Formula
   option "with-srt", "Enable SRT library"
   option "with-libvmaf", "Enable libvmaf scoring library"
   option "with-libxml2", "Enable libxml2 library"
+  option "with-kvazaar", "Enable kvazaar library"
 
   depends_on "nasm" => :build
   depends_on "pkg-config" => :build
@@ -79,6 +80,7 @@ class Ffmpeg < Formula
   depends_on "xvid" => :optional
   depends_on "zeromq" => :optional
   depends_on "zimg" => :optional
+  depends_on "kvazaar" => :optional
 
   uses_from_macos "bzip2"
   uses_from_macos "zlib"
@@ -148,6 +150,7 @@ class Ffmpeg < Formula
     args << "--enable-libzimg" if build.with? "zimg"
     args << "--enable-libzmq" if build.with? "zeromq"
     args << "--enable-openssl" if build.with? "openssl"
+    args << "--enable-libkvazaar" if build.with? "kvazaar"
 
     # These librares are GPL-incompatible, and require ffmpeg be built with
     # the "--enable-nonfree" flag, which produces unredistributable libraries
