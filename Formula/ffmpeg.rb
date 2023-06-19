@@ -36,7 +36,6 @@ class Ffmpeg < Formula
   depends_on "texinfo" => :build
 
   depends_on "aom"
-  depends_on "dav1d"
   depends_on "fontconfig"
   depends_on "freetype"
   depends_on "frei0r"
@@ -98,7 +97,6 @@ class Ffmpeg < Formula
       --host-ldflags=#{ENV.ldflags}
       --enable-gpl
       --enable-libaom
-      --enable-libdav1d
       --enable-libmp3lame
       --enable-libopus
       --enable-libsnappy
